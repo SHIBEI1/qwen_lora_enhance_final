@@ -1,0 +1,53 @@
+{
+  "project": "qwen_lora_enhance_final",
+  "release_date": "2026-10-02",
+  "development_backup": "qwen_diffusion_enhance",
+  "base_model": {
+    "id": "Qwen/Qwen-Image-Edit-2511",
+    "revision": "6f3ccc0b56e431dc6a0c2b2039706d7d26f22cb9",
+    "directory": "models/hf/Qwen-Image-Edit-2511",
+    "tokenizer_revision": "75e0b4be04f60ec59a75f475837eced720f823b6",
+    "processor_revision": "ac7f9318f633fc4b5778c59367c8128225f1e3de"
+  },
+  "adapter": {
+    "path": "weights/qwen_image_enhance_lora-000003.safetensors",
+    "epoch": 3,
+    "step": 1920,
+    "sha256": "a7d603fe5e61af25d7783fc6980a84709899cf480f65bb1867a955e0c8a7ce62",
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "selected_by_user": true
+  },
+  "backend": {
+    "name": "musubi-tuner",
+    "tag": "v0.2.15",
+    "commit": "8ec957745626317e39f04f8547910e353553354b",
+    "patch": "patches/musubi_unique_cache_keys.patch"
+  },
+  "dataset": {
+    "train_pairs": 640,
+    "val_pairs": 100,
+    "test_pairs": 200,
+    "task_ratio": "deblur:lowlight = 1:1",
+    "preserved_from_training": true,
+    "known_lowlight_content_overlap": true,
+    "details": "dataset/DATASET_CARD.md"
+  },
+  "inference": {
+    "steps": 25,
+    "seed": 3407,
+    "guidance_scale": 4.0,
+    "blocks_to_swap": 16,
+    "input": "one low-quality image",
+    "prompt": "fixed internal enhancement instruction"
+  },
+  "excluded": [
+    "smoke and pilot experiments",
+    "checkpoint selection images, logs and reports",
+    "other epoch adapters",
+    "old training feature caches and absolute-path metadata",
+    "old runtime logs",
+    "incomplete model Git-LFS downloads"
+  ]
+}

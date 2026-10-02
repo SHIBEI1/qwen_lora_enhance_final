@@ -1,0 +1,30 @@
+diff --git a/src/musubi_tuner/dataset/image_video_dataset.py b/src/musubi_tuner/dataset/image_video_dataset.py
+--- a/src/musubi_tuner/dataset/image_video_dataset.py
++++ b/src/musubi_tuner/dataset/image_video_dataset.py
+@@ -1,5 +1,6 @@
+ from concurrent.futures import ThreadPoolExecutor
+ import glob
++import hashlib
+ from importlib.util import find_spec
+ import json
+ import math
+@@ -1518,13 +1519,17 @@ class BaseDataset(Dataset):
+         """
+         w, h = item_info.original_size
+         basename = os.path.splitext(os.path.basename(item_info.item_key))[0]
++        item_key_hash = hashlib.sha256(os.path.normpath(item_info.item_key).encode("utf-8")).hexdigest()[:16]
+         assert self.cache_directory is not None, "cache_directory is required / cache_directoryは必須です"
+-        return os.path.join(self.cache_directory, f"{basename}_{w:04d}x{h:04d}_{self.architecture}.safetensors")
++        return os.path.join(
++            self.cache_directory, f"{basename}_{item_key_hash}_{w:04d}x{h:04d}_{self.architecture}.safetensors"
++        )
+ 
+     def get_text_encoder_output_cache_path(self, item_info: ItemInfo) -> str:
+         basename = os.path.splitext(os.path.basename(item_info.item_key))[0]
++        item_key_hash = hashlib.sha256(os.path.normpath(item_info.item_key).encode("utf-8")).hexdigest()[:16]
+         assert self.cache_directory is not None, "cache_directory is required / cache_directoryは必須です"
+-        return os.path.join(self.cache_directory, f"{basename}_{self.architecture}_te.safetensors")
++        return os.path.join(self.cache_directory, f"{basename}_{item_key_hash}_{self.architecture}_te.safetensors")
+ 
+     def retrieve_latent_cache_batches(self, num_workers: int):
+         raise NotImplementedError

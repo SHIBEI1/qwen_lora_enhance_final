@@ -1,0 +1,25 @@
+# Model weights and Hugging Face metadata
+models/
+.cache/
+
+# Generated data metadata and feature caches
+artifacts/
+
+# Training checkpoints, TensorBoard logs, generated images and reports
+outputs/
+logs/*
+!logs/.gitkeep
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor / OS artifacts
+.vscode/
+.idea/
+.DS_Store
+
+# Large assets are carried in the complete Release archive.
+weights/
+dataset/images/

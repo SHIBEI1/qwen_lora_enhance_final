@@ -1,0 +1,131 @@
+{
+  "seed": 3407,
+  "splits": {
+    "train": {
+      "total": 640,
+      "by_task": {
+        "deblur": 320,
+        "lowlight": 320
+      },
+      "dimensions": {
+        "1280x720": 320,
+        "600x400": 320
+      },
+      "modes": {
+        "RGB": 640
+      },
+      "input_luma": {
+        "deblur": {
+          "mean": 0.430883,
+          "min": 0.202978,
+          "max": 0.599627
+        },
+        "lowlight": {
+          "mean": 0.063014,
+          "min": 0.005801,
+          "max": 0.323883
+        }
+      },
+      "target_luma": {
+        "deblur": {
+          "mean": 0.430875,
+          "min": 0.202634,
+          "max": 0.60029
+        },
+        "lowlight": {
+          "mean": 0.461645,
+          "min": 0.195429,
+          "max": 0.753801
+        }
+      }
+    },
+    "val": {
+      "total": 100,
+      "by_task": {
+        "deblur": 50,
+        "lowlight": 50
+      },
+      "dimensions": {
+        "1280x720": 50,
+        "600x400": 50
+      },
+      "modes": {
+        "RGB": 100
+      },
+      "input_luma": {
+        "deblur": {
+          "mean": 0.42816,
+          "min": 0.359767,
+          "max": 0.496801
+        },
+        "lowlight": {
+          "mean": 0.059947,
+          "min": 0.007756,
+          "max": 0.16633
+        }
+      },
+      "target_luma": {
+        "deblur": {
+          "mean": 0.428083,
+          "min": 0.360299,
+          "max": 0.495551
+        },
+        "lowlight": {
+          "mean": 0.452784,
+          "min": 0.17826,
+          "max": 0.664679
+        }
+      }
+    },
+    "test": {
+      "total": 200,
+      "by_task": {
+        "deblur": 100,
+        "lowlight": 100
+      },
+      "dimensions": {
+        "1280x720": 100,
+        "600x400": 100
+      },
+      "modes": {
+        "RGB": 200
+      },
+      "input_luma": {
+        "deblur": {
+          "mean": 0.447934,
+          "min": 0.323001,
+          "max": 0.576354
+        },
+        "lowlight": {
+          "mean": 0.05779,
+          "min": 0.013584,
+          "max": 0.142615
+        }
+      },
+      "target_luma": {
+        "deblur": {
+          "mean": 0.447723,
+          "min": 0.323304,
+          "max": 0.575736
+        },
+        "lowlight": {
+          "mean": 0.379889,
+          "min": 0.228798,
+          "max": 0.628285
+        }
+      }
+    }
+  },
+  "gopro_validation_scenes": [
+    "GOPR0372_07_00",
+    "GOPR0384_11_03",
+    "GOPR0857_11_00",
+    "GOPR0868_11_02"
+  ],
+  "fixed_prompt": "对输入图像进行保真质量增强。在严格保持原始场景内容、物体、几何结构、位置、文字、材质和真实细节不变的前提下，恢复运动模糊、低照度、噪声、低对比度和色偏造成的图像质量损失；提升清晰度、局部纹理可见性、自然亮度、动态范围、对比度和真实色彩。不得添加、删除、替换、移动或重绘任何对象与细节；不得生成虚构纹理；避免过度锐化、过度平滑、过曝、过饱和和不自然的人工痕迹。",
+  "source_roots": {
+    "gopro": "E:\\迅雷云盘\\GOPRO_Large",
+    "lowlight": "E:\\Python\\暗光增强project(15)\\data"
+  },
+  "link_mode": "physical_copy"
+}
