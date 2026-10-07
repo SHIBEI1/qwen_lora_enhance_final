@@ -23,3 +23,8 @@ __pycache__/
 # Large assets are carried in the complete Release archive.
 weights/
 dataset/images/
+
+# Rank ablation large assets and raw logs are in the additive Release archive.
+experiments/rank8_alpha16/baseline_weights/
+experiments/rank8_alpha16/logs/
+experiments/rank8_alpha16/pipeline.lock

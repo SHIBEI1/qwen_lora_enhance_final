@@ -1,0 +1,19 @@
+{
+  "input": "/mnt/Disk1/kl/qwen_diffusion_enhance/dataset/images/val/input/lowlight/flat/887.png",
+  "output": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/results/rank8_epoch03/lowlight/lowlight_val_0064.png",
+  "lora": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/weights/rank8_alpha16-000003.safetensors",
+  "model_version": "edit-2511",
+  "prompt": "对输入图像进行保真质量增强。在严格保持原始场景内容、物体、几何结构、位置、文字、材质和真实细节不变的前提下，恢复运动模糊、低照度、噪声、低对比度和色偏造成的图像质量损失；提升清晰度、局部纹理可见性、自然亮度、动态范围、对比度和真实色彩。不得添加、删除、替换、移动或重绘任何对象与细节；不得生成虚构纹理；避免过度锐化、过度平滑、过曝、过饱和和不自然的人工痕迹。",
+  "original_size": [
+    600,
+    400
+  ],
+  "generation_size": [
+    608,
+    400
+  ],
+  "steps": 25,
+  "seed": 3407,
+  "guidance_scale": 4.0,
+  "blocks_to_swap": 16
+}

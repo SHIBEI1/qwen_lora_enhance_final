@@ -1,0 +1,27 @@
+[
+  {
+    "id": "deblur_val_0046",
+    "source": "/mnt/Disk1/kl/qwen_diffusion_enhance/checkpoint_selection/results/epoch_06_final/deblur/deblur_val_0046.png",
+    "prediction_sha256": "0cef51289ca9ebcfc1868b241d8b92adf0852ba0738eaef0782ab2d8731b9bf4"
+  },
+  {
+    "id": "deblur_val_0007",
+    "source": "/mnt/Disk1/kl/qwen_diffusion_enhance/checkpoint_selection/results/epoch_06_final/deblur/deblur_val_0007.png",
+    "prediction_sha256": "0cf01230d782a8eca45ffad3b3085f34c3a38601dcfcbb283a718ce875c91b9d"
+  },
+  {
+    "id": "deblur_val_0030",
+    "source": "/mnt/Disk1/kl/qwen_diffusion_enhance/checkpoint_selection/results/epoch_06_final/deblur/deblur_val_0030.png",
+    "prediction_sha256": "d2e84876b9007b0c978e987cf62e67eef45d6c82a9614b599d0619b2b8185648"
+  },
+  {
+    "id": "lowlight_val_0006",
+    "source": "/mnt/Disk1/kl/qwen_diffusion_enhance/checkpoint_selection/results/epoch_06_final/lowlight/lowlight_val_0006.png",
+    "prediction_sha256": "e557a6d8ef50086d817846748f42f4657af9cd66b7fa97ec3e29bcbfa5191cdd"
+  },
+  {
+    "id": "lowlight_val_0064",
+    "source": "/mnt/Disk1/kl/qwen_diffusion_enhance/checkpoint_selection/results/epoch_06_final/lowlight/lowlight_val_0064.png",
+    "prediction_sha256": "ae5b57368db9f4f17984ef2abe47ec5b189b04ddebae721b9460925a7684e3a8"
+  }
+]

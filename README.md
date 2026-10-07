@@ -87,3 +87,21 @@ QDE_EPOCHS=3 bash scripts/train_lora.sh
 ## GitHub 完整项目下载
 
 此 Git 仓库提供可浏览的源码和配置；**普通 `git clone` 或 GitHub 的 Source code ZIP 不包含模型、LoRA、图像数据和完整离线资源，也不包含后端的内部 Git 元数据**。全部原始项目文件保存在本仓库 `v1.0.0` Release 的分卷附件中。请按 [GitHub 交付说明](docs/GITHUB_DELIVERY.md) 下载并还原完整目录后运行。完整发布包上传校验完成后才会公开 Release。
+
+## Rank 对照实验增量更新
+
+已同步完成的 `r=8 / alpha=16` 与 `r=16 / alpha=32` 对照实验；默认推理仍使用原 rank-16 第 3 轮权重。两组固定原 640 对训练数据、seed 3407、lr 5e-5、dropout 0.05 和 6 轮训练，保持 alpha/rank=2；共用 3 张模糊、3 张低光验证图，以 25 步采样分别比较第 3、6 轮权重。
+
+| Epoch / step | r16 PSNR (dB) | r16 SSIM | r8 PSNR (dB) | r8 SSIM |
+| --- | ---: | ---: | ---: | ---: |
+| 3 / 1920 | 15.9173 | 0.4756 | 15.1732 | 0.4531 |
+| 6 / 3840 | 15.0967 | 0.4425 | 14.9059 | 0.4300 |
+
+结果为这 6 张验证图的平均值，不是全量测试集指标。原泄漏图 `lowlight_val_0016` 已在本次对照中换成 `lowlight_val_0073`；原训练数据未改动，640 对文件对应 611 对独立内容。低光近重复场景未认证排除；单种子和 6 图结果不能代表通用泛化表现。
+
+- [冻结协议与实验代码](experiments/rank8_alpha16/README.md)
+- [逐任务对照报告](experiments/rank8_alpha16/reports/comparison.md)、[完整 JSON](experiments/rank8_alpha16/reports/comparison.json)、[逐图差值 CSV](experiments/rank8_alpha16/reports/paired_deltas.csv)
+- [第 3 轮对比图](experiments/rank8_alpha16/reports/comparison_epoch03.jpg)、[第 6 轮对比图](experiments/rank8_alpha16/reports/comparison_epoch06.jpg)
+- [增量发布附件](https://github.com/SHIBEI1/qwen_lora_enhance_final/releases/tag/v1.1.0-rank8)：含全部 r8 权重、r16 第 6 轮参照权重、日志、原始图像、增强结果和校验清单；模型与完整数据仍复用 v1.0.0。
+
+原始实验脚本与审计文件保留了训练机器路径，作为实验来源记录保存，不直接作为迁移后的默认启动入口。完整还原步骤见 [GitHub 交付说明](docs/GITHUB_DELIVERY.md)。

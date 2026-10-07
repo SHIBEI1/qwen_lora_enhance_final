@@ -1,0 +1,24 @@
+{
+  "dataset_label": "rank8_epoch03",
+  "manifest": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/clean_val.jsonl",
+  "count": 6,
+  "lora": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/weights/rank8_alpha16-000003.safetensors",
+  "steps": 25,
+  "seed": 3407,
+  "overall": {
+    "psnr": 15.173153872723514,
+    "ssim": 0.45307428624539636
+  },
+  "by_task": {
+    "deblur": {
+      "count": 3,
+      "psnr": 14.218783360264514,
+      "ssim": 0.35520736333839487
+    },
+    "lowlight": {
+      "count": 3,
+      "psnr": 16.127524385182518,
+      "ssim": 0.5509412091523979
+    }
+  }
+}

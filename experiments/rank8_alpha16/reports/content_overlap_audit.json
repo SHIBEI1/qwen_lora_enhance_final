@@ -1,0 +1,854 @@
+{
+  "train_pairs": 640,
+  "unique_decoded_train_pairs": 611,
+  "val_audit": [
+    {
+      "id": "lowlight_val_0000",
+      "task": "lowlight",
+      "input_pixel_sha256": "20696fab61edfeb5597dc1a8877dc062f4b9fa2a2048ceb031b5362882ac367b",
+      "target_pixel_sha256": "a7a5843373297653d84b22bfdb52416ab8e1212f8d08d189178c961b15795170",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0001",
+      "task": "deblur",
+      "input_pixel_sha256": "603381f6749c55685b4a3368ec108476dbd4774be39faa423bef683c4d502212",
+      "target_pixel_sha256": "c57c44dc0f62ada94739edf4b92a10a032a011b4686d702d46ab13975340b399",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0002",
+      "task": "deblur",
+      "input_pixel_sha256": "8ea6439553c5de1686299b992f85ec6e6be91b38bcd40902b624d1ba97845880",
+      "target_pixel_sha256": "df155d1f1ecff0f76d9172ffe470832a6e719ae76cbb618435cfe289ea6cd579",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0003",
+      "task": "lowlight",
+      "input_pixel_sha256": "fde0aa6520724355c28b12a6abf0a3ee54c27d5dbba31580a93dd1ec2901377e",
+      "target_pixel_sha256": "e22ad719cb2346f51f04218ca579b37e6a4a5437ac7973eed69ca163fb510eea",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0004",
+      "task": "lowlight",
+      "input_pixel_sha256": "20696fab61edfeb5597dc1a8877dc062f4b9fa2a2048ceb031b5362882ac367b",
+      "target_pixel_sha256": "a7a5843373297653d84b22bfdb52416ab8e1212f8d08d189178c961b15795170",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0005",
+      "task": "lowlight",
+      "input_pixel_sha256": "15b30b4ebede3eee49ed909f331dd0fe41f71f0e4346158474c732a289213f18",
+      "target_pixel_sha256": "69ad50bea71609b714af83e34efe6134eb8372f3b77a36acabdacc70b06aa670",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0006",
+      "task": "lowlight",
+      "input_pixel_sha256": "a4f9d742c7cecac2ae35f7071eb5039c15ef337f08a6761d9b937c79228eafbf",
+      "target_pixel_sha256": "9de83ab900a2d817336463efb11d07204985d0ca23f27f6df6eaeb0e698fe93c",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0007",
+      "task": "deblur",
+      "input_pixel_sha256": "c5dab211451634ae4dbc0ac7afbbc18f52d418b324f851721102c5da7e6ece10",
+      "target_pixel_sha256": "b97f6edd9cbffe1561a08217558f13d97dbe70f9ca17f7e0db1e4ce717601b3f",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0008",
+      "task": "deblur",
+      "input_pixel_sha256": "5f71633872f6c25d78f8c704656dd871adb34005101a76a77991ac7ed019af39",
+      "target_pixel_sha256": "2538d493b78ccc15f7044253153f9fce001ea21cf6890eeaf5a5ef25d581d387",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0009",
+      "task": "deblur",
+      "input_pixel_sha256": "93f0694d96220deb8755f5882af10f3b4e6ccda82296677261ff3f8836383642",
+      "target_pixel_sha256": "869383147039c924ed44dddb57b21f53e0601009324b11286cc002f30c675fbb",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0010",
+      "task": "deblur",
+      "input_pixel_sha256": "e5801f4b32fff0706bca9b1cdcc5f3ff886dd9b9545d0db98fe9bf8b45ec2731",
+      "target_pixel_sha256": "1c79cf7cbe2bf4613516460eeb4438ba800bed1d4d6d6cca7aa62b0b5ee47573",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0011",
+      "task": "deblur",
+      "input_pixel_sha256": "0d18c8f2770474ad615827a9dbacb4cfecbce39d1323695443b7312998f458dc",
+      "target_pixel_sha256": "39f2f50a1b5fe480990cc7d0dcfc5d213ee38fb91a3d1e1df3bd30b6002155c3",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0012",
+      "task": "deblur",
+      "input_pixel_sha256": "0e74b5471a42b4db60d9ddb770e5af84655369d9a65e5455d203e456b9983bdf",
+      "target_pixel_sha256": "14fc07a162c13c5e7873e5558cc7b5fe3003b8d9be9d741c3b2872e406890d24",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0013",
+      "task": "deblur",
+      "input_pixel_sha256": "3c9f8848b0a552dc3ddad4fb7317f6a347788aaafbce7c65aaa98672ecc1c2d2",
+      "target_pixel_sha256": "008fecb6bc1aa16c8dda623959afd46152fca3214c7482c9a716541afcac504d",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0014",
+      "task": "lowlight",
+      "input_pixel_sha256": "3d28a772e46c4a3018486ccc40f79b5ba410de58e951159d2bb1eb7aba34bbb9",
+      "target_pixel_sha256": "582457b3dd34c84cfc5cf139f69fa9e8d0e114251b8bb71b876767920bbdf64d",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0015",
+      "task": "lowlight",
+      "input_pixel_sha256": "90f94a68aa6a1f5de676ff0ac1f6badd346f4a25a3fc2579d8903d559c535221",
+      "target_pixel_sha256": "4880853ca037868e595715660331d1b809464f82a1a899818ed32705981d5c57",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0016",
+      "task": "lowlight",
+      "input_pixel_sha256": "742bc2074e93e5a903e775c882ac13c54222c657908f5c7385bca75bc49149f9",
+      "target_pixel_sha256": "7fa6e9d3da15a8d275798fb160ed3b0278106ac88591140fdff1ac01f4a7d2e7",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0017",
+      "task": "lowlight",
+      "input_pixel_sha256": "c79e8a22a0976ee193c83bd6b08923aa180b817ccb98b2a2f2a5f96f491d1b7a",
+      "target_pixel_sha256": "788295441d3013f948854e3f363be830590bd497c20e36f36c4146a0b4742b12",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0018",
+      "task": "deblur",
+      "input_pixel_sha256": "2611b9240d38f5fcea4852994fa5feec0d906713899685a9c38dbcda1d7404c0",
+      "target_pixel_sha256": "e28792b9e1a50f6ff541ccf5e74facfef50462e2a0edb02cf9155b6afed1d270",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0019",
+      "task": "lowlight",
+      "input_pixel_sha256": "c36cd9f5d99523564e82e6a6f5de7200b33cedab7a9f4ea82d9f2b82c11441b5",
+      "target_pixel_sha256": "4b971648a57c18917cc9708911a3a6f4eb49e6933fd23857369a1b4874e1d74d",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0020",
+      "task": "deblur",
+      "input_pixel_sha256": "9db8c2805385a4f432f45399286960c5b5b9cc24a98d27f7d00a07c0035b0a92",
+      "target_pixel_sha256": "4e08d08c8181b921f5ef296e0428719196cb2da0faa83b7cc14c2dd0e8aadbd8",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0021",
+      "task": "deblur",
+      "input_pixel_sha256": "cd948fb10bb9dc9cc9fcd5de3b84b1a5002b804678829da4669bf8368b08f5ad",
+      "target_pixel_sha256": "78e530f626ea511d28aef36be7120d3c74aa3118ca0d59d790b89eee1773a130",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0022",
+      "task": "deblur",
+      "input_pixel_sha256": "2c49535f406e00998ca289bb51bd12d7169c0e227fdce311e9243ae01e68e0fa",
+      "target_pixel_sha256": "4d3b2adb3576d7e6e3d8cd1aa2ae3a724c29466308778138b3f4cf9bfa7a3a92",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0023",
+      "task": "lowlight",
+      "input_pixel_sha256": "8603291e5d2177dda5e10b7265fc17c079d672b6d1cb54b2e0031f106a5e6f76",
+      "target_pixel_sha256": "8c5f8daca898eefe37d55d7e2df99a0cde4ab2bedcda267471a2a6bfeadba8a4",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0024",
+      "task": "lowlight",
+      "input_pixel_sha256": "3d3bdde976063aafbf670f18959cc6f7ead3684817c05a59dd3c7ec73b1cdbc6",
+      "target_pixel_sha256": "fc822cee577607c93e0a95aefe2819c0c2a2353520aafd3bb3ef7132e24b7fd5",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0025",
+      "task": "deblur",
+      "input_pixel_sha256": "cbb9e0f6bfb8c12ad2e050c3c349a8aacdcbae493bb9c849ee421a5590a6037e",
+      "target_pixel_sha256": "25da4e96c7ba10f1ea95e06851c2c01b094bda91a2cad05a0f0223a1b3874046",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0026",
+      "task": "lowlight",
+      "input_pixel_sha256": "b46341ca6356466bd829e33ccee4f0ceed9674d7bbe271b3b5440d407e598150",
+      "target_pixel_sha256": "777c0e6c35b84b452fe3e6db4e25dc65e05df21599299bd13bc9aa59009aafe5",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "deblur_val_0027",
+      "task": "deblur",
+      "input_pixel_sha256": "ccbecf9e02e9a40a0b4388b55d0547d0deec320238a0b1a5f5d3f470437f08de",
+      "target_pixel_sha256": "49ce8a66dedd688897178414d96d29fe43d918f229b889e1effdc6651a2f5928",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0028",
+      "task": "lowlight",
+      "input_pixel_sha256": "32ead1f105880aef123ed8e002c0a0b32ff634ef60d7073b8678be1b043c846b",
+      "target_pixel_sha256": "4b2496a9ecbc62528ca3dd89d25f03cd201a4d854e3ee0353477bc763c7a3377",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0029",
+      "task": "lowlight",
+      "input_pixel_sha256": "821d97704000ebbe2e8ea749896a92e5a7fa7bab1306f138d6e138890ff9a27f",
+      "target_pixel_sha256": "bf9ce29d313cf09ecd1e798ef90ee65285609ef0a584094edb4291b81df08b50",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "deblur_val_0030",
+      "task": "deblur",
+      "input_pixel_sha256": "8511e716dd476d6ab15cd6d142454f27d3112e50c26aefb823c2a4f66e0f7b13",
+      "target_pixel_sha256": "89e2dd5e707b499aa1a3b5be52606fcaf6e4d8a1e223b9b40f0f27d923b9d172",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0031",
+      "task": "deblur",
+      "input_pixel_sha256": "9641708d0285aa4cefefd651cede6d077edbac71d11639ead6347ec7b43b0b73",
+      "target_pixel_sha256": "6c576f7cb7689c745848e36261dc5846d30d42583253ded019308c193fbb4f4f",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0032",
+      "task": "deblur",
+      "input_pixel_sha256": "62daf9b98ac37445539fec65d93c2c3454b9ac3b3a3c1677bc30226e09ea6090",
+      "target_pixel_sha256": "427d354a5c834498449c556e64653430523c8c6a60fa386e03b3bab46c97dab2",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0033",
+      "task": "deblur",
+      "input_pixel_sha256": "628dbbd7bc049f6d9ed524a36e80ac1cb2cb48907514f9b7e86fb23245b53961",
+      "target_pixel_sha256": "b756ddc1c68bb0c544165a7b283277395829f804fcc4852e942de52d78769d14",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0034",
+      "task": "lowlight",
+      "input_pixel_sha256": "f3e373e28eabc9c0079b23eff1417c8b4d321a46e50ada1b132b6911d1ec75b4",
+      "target_pixel_sha256": "ba7a73103fa6d36ee49c2f0a47db0a6d0ac9cd9d56d5f121d99cc0e936775709",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0035",
+      "task": "lowlight",
+      "input_pixel_sha256": "cdfb17fd2dafe9e9055a761c3c70888d373924e9b6324a25d48aca3771f608f1",
+      "target_pixel_sha256": "ffa14b0c770dbb981885dd8932cb5f79156af07bacbd4d8c5f7e4c8d92adfdcd",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0036",
+      "task": "lowlight",
+      "input_pixel_sha256": "f943514ba56d1ee3d350eb07480994725dcf7358987d013d81f983a0a87352d0",
+      "target_pixel_sha256": "a1cf8c95bc3941697947edf0e8affdb3d9e6fb9419bf4633490e9f788497d016",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0037",
+      "task": "lowlight",
+      "input_pixel_sha256": "38b52dd978c5d5b79ee56b7d619c78f614d58ef4e8789d6a8baa05dcf673d641",
+      "target_pixel_sha256": "6d210288f61d01dbd06a45c5c4fac1db4ec263d6fc4b77efa0a39a987cab9f26",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0038",
+      "task": "lowlight",
+      "input_pixel_sha256": "cfb2fc4689b5aca78795b074c9a87263f04c3a02ab7eafe45d0f46ad037e4e33",
+      "target_pixel_sha256": "edd87f9f057d0cd13cf529b9be9a6faba333828508f402775399cffba7fec5a0",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0039",
+      "task": "deblur",
+      "input_pixel_sha256": "f5bcc87ca83a60faac03bacaaa0e613f9f415e3f6e4c621d549f2c8b9d81c486",
+      "target_pixel_sha256": "26ca2f504aab6082da700c5a0fe2e0ea60eb8e695c5285cef28c9462c1d86dce",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0040",
+      "task": "deblur",
+      "input_pixel_sha256": "0bbb4cbba9d6aeaa361f3741603156ff36e4547aeae3cea21dfe0416d2b04f45",
+      "target_pixel_sha256": "6d02291a9e41b141f068c72fe8462ea5caaa18cdd3e5791f515cdc17f9a65168",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0041",
+      "task": "lowlight",
+      "input_pixel_sha256": "42107dd8f825c8b40cfd0baae1e3ae6bfb242465a6b973838fa3ad26e630db3a",
+      "target_pixel_sha256": "2926d223a76446802856db75a9cff112d97e07e5c913b21cdf2479766d423112",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0042",
+      "task": "lowlight",
+      "input_pixel_sha256": "47fa032dad7b33c2e8d0e421a95da4934b6e2b7956236b755f4b5bbfb22af981",
+      "target_pixel_sha256": "bf01ce9f941f2ff53ceef8fc7632da70f1b21d756452bce0d0ad53fcb483c4ed",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0043",
+      "task": "deblur",
+      "input_pixel_sha256": "35f02401d5fbf6b7d183dcea7bf6f52f3f93ab021bac1850ea96f98f43d584c3",
+      "target_pixel_sha256": "6da4086fdb8825c7cfe60ca6c277407441f159bbd08996e3be133a352c81b76e",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0044",
+      "task": "deblur",
+      "input_pixel_sha256": "916569cbc991de2842c8c71840d09af29a0a6c8761ac5f4fb6465d161f21e4f2",
+      "target_pixel_sha256": "f024f4c73e355ab9fca1c7afa51d85287df0d27e7aaabbf996e43f8af7ef3f3a",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0045",
+      "task": "lowlight",
+      "input_pixel_sha256": "626be356c594e24909e5900610050957cbee45763c3de774bcf07aa24153c628",
+      "target_pixel_sha256": "203739d9c51dd500e79d96e553ef470f2e6bd0a1a08f839fccfd650a76cc6c83",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0046",
+      "task": "deblur",
+      "input_pixel_sha256": "0bdab85f813e287744f6c573d0d3d5126e3d7754359874d9b7f517ff790a670e",
+      "target_pixel_sha256": "2a4409317975f167e89cf0ff615d50348bc08ce10a6d15f4e76732f7055114d9",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0047",
+      "task": "deblur",
+      "input_pixel_sha256": "df386d9da3a6804ec4bd55c4a931cd1d15adac14bf5c6fb427f39a1360f66d91",
+      "target_pixel_sha256": "17f52e9200cc3cc95f07dfe5b3ba145fc2725bec99259efc4e98eeb862f4f0b1",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0048",
+      "task": "lowlight",
+      "input_pixel_sha256": "efa36ceba7fcc38a9773c5111a02f55b701efadf4391490106b52a6f14daddf0",
+      "target_pixel_sha256": "b7ac5b9b1ffcc8250ecf5222f036da1815b3349de83be64d470ab3a55c9e9dd1",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0049",
+      "task": "lowlight",
+      "input_pixel_sha256": "d71614777de770be4bec28ddad90c4f610bbd094644be8c1cee0e57193381d4e",
+      "target_pixel_sha256": "7cb6c2512e1b49de30e09203146ba319f41789df408a9b2876742ae9602cee53",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0050",
+      "task": "deblur",
+      "input_pixel_sha256": "4367ee38b513c3ae4e99f8353a836597600beb0c6ee8a0d0576c55af0227b015",
+      "target_pixel_sha256": "d67881445cdcc1a0841660a67fef28f2918788bbc988adf62489ceba4dcfeab7",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0051",
+      "task": "lowlight",
+      "input_pixel_sha256": "ee5e859b52a8b5ff0b1bb11e2d622f4e3ea52b38bcae4f5f2c6b29def02540e8",
+      "target_pixel_sha256": "bcc8458d13b78c62e409cd83e1a1565cd1191d673cf68cfeb12181805fbaf2a3",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0052",
+      "task": "lowlight",
+      "input_pixel_sha256": "4e43ca76fb55d0679cad8c1e43a6001647a51b2e375a50b5857e4d397f7eef1e",
+      "target_pixel_sha256": "c58a3b1c947b286e11a875398ed144663455af620487e521789f6b1d2b7485d0",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0053",
+      "task": "deblur",
+      "input_pixel_sha256": "72c9a937974e06b29ad7b3a7838c55d6f15bf93b872da617bc22c94a82c7bc66",
+      "target_pixel_sha256": "4939abe0daae4b1e110b62dc00cbe0e5d870f97aa6ee104af8ac08554a951241",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0054",
+      "task": "deblur",
+      "input_pixel_sha256": "5a74d6d35be2c39ed590200a099993a3d699dc48a26993cb2ffce4a644ad1d3b",
+      "target_pixel_sha256": "f834f38f2bbe3147309389a91ed1759abe406b353e58072e95de965113fe6ca0",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0055",
+      "task": "deblur",
+      "input_pixel_sha256": "70ac42443f1ffd1f9a29d71daec32f6e47fc179fb4696ab66b86e75de8d0aab3",
+      "target_pixel_sha256": "f9752a1d15dcd7fa2f8516919f913d1a8e1a84b88aa6e0a9fc188c62628385bb",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0056",
+      "task": "deblur",
+      "input_pixel_sha256": "204e62c8788155da9b135e05a0f43d3f831c0e2083ba51a5f5e42093201aedd4",
+      "target_pixel_sha256": "f28a954ee97c85fb8ba8826cc1a49d81a0568bd1358d28ff3ab06232ff74f1c0",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0057",
+      "task": "lowlight",
+      "input_pixel_sha256": "8dded7638a13afc3ae4a14eaeb595c9526ddcb8dc7f4f26222562b0c610787f4",
+      "target_pixel_sha256": "2a9990f72f2ed08f58f22ca6399fcf53220a63963a866e4cc89dcf8f38c34b42",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0058",
+      "task": "deblur",
+      "input_pixel_sha256": "71bed51ac2f1a7ae26fba4ae85792beeedaf835b6c1b0188efb389268c968329",
+      "target_pixel_sha256": "815a42e71d4e84bca20ae8f974e875911d09602f67ffd63f5de0d42cf4381d25",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0059",
+      "task": "lowlight",
+      "input_pixel_sha256": "1b6e6a7e17f778e5eda643c073f9b148ebb496df88ea9261deb13e6995fc34fd",
+      "target_pixel_sha256": "784287bd67014a4a0b0fdd4f6e5044be8317c8c9a2cac810f7d0e089f3862792",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0060",
+      "task": "lowlight",
+      "input_pixel_sha256": "b52f483261a900553b6ccbfcc534cfe3d03b32794ca9f80a95ff1e4330bde118",
+      "target_pixel_sha256": "c349c0fb4e000ce3da2193868aeae7696d6459ac495df50e7a431764eebb287d",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0061",
+      "task": "lowlight",
+      "input_pixel_sha256": "514b04d0f74a9ee7ed9ac54a02daa675cdb301100a4dd6f4af46350b0faa1b0b",
+      "target_pixel_sha256": "6a7cb4c64a8300ab430c4b05f3e9e43c0d43ff67a7fb8a087a5409a717eb678c",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0062",
+      "task": "deblur",
+      "input_pixel_sha256": "751d3ad6ff36ed3d4db49593ae14349d4ace2155855656ae39e66e6b20a574b1",
+      "target_pixel_sha256": "86708cb38db0be90a21d15c342c72736076f9f432ae6c162c5880646f427d985",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0063",
+      "task": "deblur",
+      "input_pixel_sha256": "fb18d10a031b7b2036b1adc94238e32006e45551a549add60e74d063795dec71",
+      "target_pixel_sha256": "151a77d14c38539ab7b8818756364147c60f96d67235a10dcf21240c06792501",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0064",
+      "task": "lowlight",
+      "input_pixel_sha256": "eb976ae7c6b303f1869109343309fe4170522b132ab047c28ab10a489b342914",
+      "target_pixel_sha256": "f3a07b2a4fce883c48bb4a71c614c7d701a9ccfa29a3989f3d9578b3067a41ef",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0065",
+      "task": "lowlight",
+      "input_pixel_sha256": "a3ef512e90905690594c08dee43d60d8bab3db5498ff4af9c8d4be743d12ac9a",
+      "target_pixel_sha256": "a4ce69f50135cf8d5e5e0b7e5040d36c211585d42ad0169e73ef5ff762268e3a",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0066",
+      "task": "lowlight",
+      "input_pixel_sha256": "25e73ca929444975c6de690ac7104f20c12ed4a03ac2b504038d26e62578f1e7",
+      "target_pixel_sha256": "2117cbd52b45da7dd2d82813ff12327db0ac038aa770cac9d64018c916c2df10",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0067",
+      "task": "deblur",
+      "input_pixel_sha256": "0ab67f13b8dd5b2dabfd6de9b3c43480e2a91a4f1e713adea2de8cd6744bea8d",
+      "target_pixel_sha256": "530903fb143658a0577546f5a0345bc1a721e9c9222cb59ce567f310ea4b95ae",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0068",
+      "task": "deblur",
+      "input_pixel_sha256": "cf8d96c181602f987b9201e3f71481ff14602baa5acdffe0277c72b07c77a4b1",
+      "target_pixel_sha256": "7f0c24c1c4ae8e06b61efc43db7894ef16bdf49a8de013f2a49f4ad94b28dacc",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0069",
+      "task": "lowlight",
+      "input_pixel_sha256": "04a3a4f3188b2ff078a811251c50f79b97cfff111910c7525fc8899d68643fc3",
+      "target_pixel_sha256": "a82dc10312da5ee16710a03f98469e3042f8d8256bf81ed90e34b43bd44af289",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0070",
+      "task": "deblur",
+      "input_pixel_sha256": "9b9f6bd2e50ba248c50b6b0e027e0cfe663a620f3ec3a219fc1e56cf44a9a3f3",
+      "target_pixel_sha256": "685bfb5555588c04fd6c89e6c3df1e76adf4d94cb416f975ddc8cab918531974",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0071",
+      "task": "lowlight",
+      "input_pixel_sha256": "99959cf75e61f85bc0b44f77dc342a717f1f0a09d0cd1f4f83ad1bf60fc660d2",
+      "target_pixel_sha256": "ee784a181be446914c32e213288129e55bab53e2d4ae760a138dc7aaaecbbce6",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0072",
+      "task": "deblur",
+      "input_pixel_sha256": "08bd57409c102536881aa2c5ea94dddb1eab742fb9455505d39d8e8885b9b97d",
+      "target_pixel_sha256": "1c1faf7a2cb61f3f3e89b5a6bb87c189960843dc76ec14e22fb0d9fcdf41188a",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0073",
+      "task": "lowlight",
+      "input_pixel_sha256": "8fcc9f52bbaa1b18ad98a480b9e4a3960d5da0f3b5f507ec0b1a4fcd0cfe549e",
+      "target_pixel_sha256": "0d3c1638b5a9ced75de239c2143161534d418f78b6b0f3120603b9d6a2fb5e32",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0074",
+      "task": "lowlight",
+      "input_pixel_sha256": "d05daa55ac71c72e3b08637851e1cf53c25f26e8ad8d60f5f018f163c43c1ad6",
+      "target_pixel_sha256": "502090624aad05c5b2ba2640ddea6eede4df82233acba105afa043dbfa356ca5",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "deblur_val_0075",
+      "task": "deblur",
+      "input_pixel_sha256": "74f64e92bb8646d1be01901b8564d0017634af7e8eeb29b31dac70ae0f274313",
+      "target_pixel_sha256": "a28c77c7716f3d619ac040cd9f578e6aaad354770fec311f5b0ab7fcece95f91",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0076",
+      "task": "deblur",
+      "input_pixel_sha256": "92082be11e1e28ef0e8d604c5cd47cc0b4e79d1086c54b0ef33e976cc31ef91c",
+      "target_pixel_sha256": "9d647095586ac7eb5df8dcd7d51a5de13d11ebe431bccc726908d40d1c707335",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0077",
+      "task": "deblur",
+      "input_pixel_sha256": "73fef26adeaea9e1b8aa1fd06c9051e698a79d4c0a44f50c2f22bee33c7c9203",
+      "target_pixel_sha256": "7770a8952a30641c788175e74241ae6ecb05fd0260c7a34b9ce1f06ef1e88731",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0078",
+      "task": "lowlight",
+      "input_pixel_sha256": "a06f1db2b329e48a55de97156b9aa1e9c0e58c1a63e8260eee72edf3dd6193ea",
+      "target_pixel_sha256": "8a14f8df169b511b3a405616d752acbad51b91138ca173d616e9d7fa20621514",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0079",
+      "task": "lowlight",
+      "input_pixel_sha256": "eae265c53c4d738351207345564d22e4ec51645a53879ef4304ba38cfaf8665d",
+      "target_pixel_sha256": "9162230cb0ea4c41ab2349412faaa06411df0edbd30a5f4699cc41ac7cbaf504",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0080",
+      "task": "deblur",
+      "input_pixel_sha256": "6fc107920652459295bf9490d79e3258cbd1ace986d3f7a8afe2fd662a96953b",
+      "target_pixel_sha256": "e3323498cfad5c0926e422ec16c213ce13672ee5d0ad643800819905e401b182",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0081",
+      "task": "deblur",
+      "input_pixel_sha256": "f276719349ad0553f9ab7b26c26fe3b936e0576f8929af4e9129d6c6433b5692",
+      "target_pixel_sha256": "f52e2d4b3f932d4e397c8107c68a68c379baa4b2b6184ab4b3c4498a161c95a3",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0082",
+      "task": "deblur",
+      "input_pixel_sha256": "ae044714123026eac10fb210a17176860435bebf31ae1fb8d6b689e791b4eefc",
+      "target_pixel_sha256": "e5c49a12a4e6bea930bc1c70c2c75027a8133ccffe712d979e888afed0ff41c2",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0083",
+      "task": "deblur",
+      "input_pixel_sha256": "800741be2f8159c0f135ad92cf2c50390ad443aea7514e9c6c2473f0fa6e4340",
+      "target_pixel_sha256": "1445bb0d477e0bf3072e3b2cef02b3f29c2ae9ef12870b695ee03d332b6d39b2",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0084",
+      "task": "lowlight",
+      "input_pixel_sha256": "b1bd7fa3d71bb0717b6bee2bed8550796c0b47d82de4663d5b4e3f87b6eebb6d",
+      "target_pixel_sha256": "410beeb88ce2efcaecd95ffe58c0e871cc9759023dd585fd65d9c69b285e0610",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "deblur_val_0085",
+      "task": "deblur",
+      "input_pixel_sha256": "7847d3a341ab3c40e8478804bdb83f8b0a3f0260bfef4e3283a1fda0a909510b",
+      "target_pixel_sha256": "f744e58df818ca5ffa51344c023158cb97873fe0c9e41a2744b1527ca70efceb",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0086",
+      "task": "deblur",
+      "input_pixel_sha256": "464ed1d69f2ae147dd0b5424279ba734eebae402e27f4934152f4081f1c7ae80",
+      "target_pixel_sha256": "a61fa785420a832a68a2f3c456ab05c362f38e3c2968f2600e6d546d5a616d9d",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0087",
+      "task": "lowlight",
+      "input_pixel_sha256": "12b67babce32e8b0571588d43f2d2f3da3dd12b352574f7226e9051323020889",
+      "target_pixel_sha256": "b7e5a5ea9fc6c1ee704e97920df009b2d881dd16b54c142fbef7484804e5c82e",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0088",
+      "task": "deblur",
+      "input_pixel_sha256": "d3318683c8a396e23fa0418fcccd2ce669b64ff419692d073c485161e835984b",
+      "target_pixel_sha256": "8e274ec56d5d1d2a1db0f297a30a50202ba262c6feaea664c8a8ad56b42dd302",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0089",
+      "task": "deblur",
+      "input_pixel_sha256": "731c4964c39bf8519392f0d778e32306b4deb76e5967e5328ff61b90487357cb",
+      "target_pixel_sha256": "645a4e2dd5ce397535f670111e430a72b99d2f3a95abad3aeca2309a20aa1be4",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0090",
+      "task": "deblur",
+      "input_pixel_sha256": "332321db931a2db1978859446e5d74f5600f51b0d9598ad1abf1ba32d200ed0e",
+      "target_pixel_sha256": "9964207c294c311484b331ec492fa8e25fad060cca616043b728086e8de814ba",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0091",
+      "task": "lowlight",
+      "input_pixel_sha256": "61161bda2b1302ebf7eccee57138e76dda5bad0bfc510b492a378d7a4c5281a9",
+      "target_pixel_sha256": "65cfd020bf81c099cf3df4c676fea290e7fc92f362730c672cb97180205e9da9",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0092",
+      "task": "lowlight",
+      "input_pixel_sha256": "f6a27b1dead96c22bfd8a71a1f532605865c71774b666fb8b1bfd9538fca96ee",
+      "target_pixel_sha256": "db553955e82ea1e4064f0e5a04de4df37d030674eedea36d57289ceca9a1b8c8",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0093",
+      "task": "lowlight",
+      "input_pixel_sha256": "4bd921a339b3522fb882c7598e282d8216001ce9d68af194c51a44b7bbdc2bec",
+      "target_pixel_sha256": "5d3ce377c7830bb02dbcf42cd1895053cca8d521d6573df5f142872d92ac8595",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0094",
+      "task": "lowlight",
+      "input_pixel_sha256": "9b19b782fc38b9b6f59c3bac0503115f0207273df2d0cdc3bd4c2e8f1ef8c342",
+      "target_pixel_sha256": "051c789342be2c0921e5d4c8e83d0ece4ee3b174c5ee1800290f2307db2bf4d0",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0095",
+      "task": "lowlight",
+      "input_pixel_sha256": "39958fa1d529d458f8dcb2078f40f7fbd7f584b0f78c6c302e244881845839b6",
+      "target_pixel_sha256": "96839ed11c0ac31b46c420a70788d98481071e272302a0527536a7cc0b95f221",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "deblur_val_0096",
+      "task": "deblur",
+      "input_pixel_sha256": "aabce8f1f377ae5a36acf6de58c053f69c0ce7ec4bcc01a9b4217dba2d031b45",
+      "target_pixel_sha256": "33702a98e3423b444ffddfa1c925fb8d7b11d3b72605b0acbbd708a71d19c7f1",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0097",
+      "task": "lowlight",
+      "input_pixel_sha256": "0f278307ea4c44ee92c4f41f198067cc919171bf051838ad73bd57e9ca1dab62",
+      "target_pixel_sha256": "e6d9fa00e9a6f2e3a213711b4bd1f7de85993891f55c1f94482b8b6582cb95db",
+      "eligible": false,
+      "excluded_reasons": [
+        "input_or_target_exact_RGB_overlap_with_training"
+      ]
+    },
+    {
+      "id": "lowlight_val_0098",
+      "task": "lowlight",
+      "input_pixel_sha256": "a218e74dd0f99f466a5ae95f73c4b67709504a2103523595a983e76ddd862224",
+      "target_pixel_sha256": "4a7ad29318d6bf4869b45750ff9a7cf1aaae579f2fc2895cb8f0aee98c6ef48a",
+      "eligible": true,
+      "excluded_reasons": []
+    },
+    {
+      "id": "lowlight_val_0099",
+      "task": "lowlight",
+      "input_pixel_sha256": "b3d652d31e3967f67d0914574bb6192ef7f27d610b13f7f2b2fa7e38d96b1e2a",
+      "target_pixel_sha256": "be53d36585fcd10b4d5be7e8a7853b09609f47bc2245ad688c8cc4e8ee2dc822",
+      "eligible": true,
+      "excluded_reasons": []
+    }
+  ],
+  "selected_ids": [
+    "deblur_val_0046",
+    "deblur_val_0007",
+    "deblur_val_0030",
+    "lowlight_val_0073",
+    "lowlight_val_0006",
+    "lowlight_val_0064"
+  ],
+  "replacements": [
+    {
+      "removed_id": "lowlight_val_0016",
+      "replacement_id": "lowlight_val_0073",
+      "reason": "exclude RGB content overlap; replace by closest input brightness"
+    }
+  ],
+  "limitation": "Exact decoded RGB audit and GoPro scene isolation; this does not certify absence of lowlight near-duplicates."
+}

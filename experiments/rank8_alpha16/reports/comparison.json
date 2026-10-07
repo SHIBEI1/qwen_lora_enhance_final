@@ -1,0 +1,382 @@
+{
+  "created_at": "2026-10-07T00:34:20+08:00",
+  "protocol": {
+    "split": "val",
+    "count": 6,
+    "task_counts": {
+      "deblur": 3,
+      "lowlight": 3
+    },
+    "selected_ids": [
+      "deblur_val_0046",
+      "deblur_val_0007",
+      "deblur_val_0030",
+      "lowlight_val_0073",
+      "lowlight_val_0006",
+      "lowlight_val_0064"
+    ],
+    "replacements": [
+      {
+        "removed_id": "lowlight_val_0016",
+        "replacement_id": "lowlight_val_0073",
+        "reason": "exclude RGB content overlap; replace by closest input brightness"
+      }
+    ],
+    "primary_epoch": 3,
+    "secondary_epoch": 6,
+    "steps": 25,
+    "seed": 3407,
+    "guidance_scale": 4.0,
+    "blocks_to_swap": 16,
+    "max_pixels": 1048576,
+    "lora_multiplier": 1.0,
+    "metric": "full RGB PSNR/SSIM at original output size, same original evaluator",
+    "rule": "paired matched-epoch comparisons; report both tasks and metrics, no best-checkpoint search"
+  },
+  "training_settings": {
+    "train_pairs": 640,
+    "epochs": 6,
+    "steps_per_epoch": 640,
+    "max_steps": 3840,
+    "seed": 3407,
+    "rank": 8,
+    "alpha": 16,
+    "alpha_over_rank": 2.0,
+    "dropout": 0.05,
+    "learning_rate": 5e-05,
+    "batch_size": 1,
+    "gradient_accumulation": 1,
+    "resolution": [
+      512,
+      512
+    ],
+    "optimizer": "adamw8bit",
+    "mixed_precision": "bf16",
+    "fp8_base": true,
+    "fp8_scaled": true,
+    "blocks_to_swap": 16,
+    "initialization": "fresh LoRA from frozen original Qwen base; no rank16 adapter resume",
+    "target_scope": "the same 840 matrices as the baseline; no injection-scope change"
+  },
+  "comparison": [
+    {
+      "epoch": 3,
+      "step": 1920,
+      "rank8": {
+        "dataset_label": "rank8_epoch03",
+        "manifest": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/clean_val.jsonl",
+        "count": 6,
+        "lora": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/weights/rank8_alpha16-000003.safetensors",
+        "steps": 25,
+        "seed": 3407,
+        "overall": {
+          "psnr": 15.173153872723514,
+          "ssim": 0.45307428624539636
+        },
+        "by_task": {
+          "deblur": {
+            "count": 3,
+            "psnr": 14.218783360264514,
+            "ssim": 0.35520736333839487
+          },
+          "lowlight": {
+            "count": 3,
+            "psnr": 16.127524385182518,
+            "ssim": 0.5509412091523979
+          }
+        }
+      },
+      "rank16": {
+        "dataset_label": "rank16_epoch03",
+        "manifest": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/clean_val.jsonl",
+        "count": 6,
+        "lora": "/mnt/Disk1/kl/qwen_diffusion_enhance/outputs/lora/qwen_image_enhance_lora-000003.safetensors",
+        "steps": 25,
+        "seed": 3407,
+        "overall": {
+          "psnr": 15.917329049005673,
+          "ssim": 0.4755578191357497
+        },
+        "by_task": {
+          "deblur": {
+            "count": 3,
+            "psnr": 14.250971419614295,
+            "ssim": 0.3579724970843752
+          },
+          "lowlight": {
+            "count": 3,
+            "psnr": 17.58368667839705,
+            "ssim": 0.5931431411871242
+          }
+        }
+      },
+      "deltas_rank8_minus_rank16": {
+        "deblur": {
+          "psnr": -0.03218805934978164,
+          "ssim": -0.0027651337459803083
+        },
+        "lowlight": {
+          "psnr": -1.4561622932145326,
+          "ssim": -0.04220193203472633
+        },
+        "macro": {
+          "psnr": -0.7441751762821571,
+          "ssim": -0.02248353289035332
+        }
+      },
+      "per_image": [
+        {
+          "id": "deblur_val_0046",
+          "task": "deblur",
+          "rank8_psnr": 13.343734974168447,
+          "rank16_psnr": 13.365154577783397,
+          "delta_psnr": -0.021419603614949878,
+          "rank8_ssim": 0.2967020265566526,
+          "rank16_ssim": 0.2982031749254382,
+          "delta_ssim": -0.0015011483687855653
+        },
+        {
+          "id": "deblur_val_0007",
+          "task": "deblur",
+          "rank8_psnr": 12.424651943534588,
+          "rank16_psnr": 12.469496295001205,
+          "delta_psnr": -0.04484435146661703,
+          "rank8_ssim": 0.20764141108851,
+          "rank16_ssim": 0.21064355111652677,
+          "delta_ssim": -0.00300214002801677
+        },
+        {
+          "id": "deblur_val_0030",
+          "task": "deblur",
+          "rank8_psnr": 16.887963163090504,
+          "rank16_psnr": 16.918263386058282,
+          "delta_psnr": -0.030300222967778012,
+          "rank8_ssim": 0.561278652370022,
+          "rank16_ssim": 0.5650707652111606,
+          "delta_ssim": -0.003792112841138673
+        },
+        {
+          "id": "lowlight_val_0073",
+          "task": "lowlight",
+          "rank8_psnr": 17.331805460945237,
+          "rank16_psnr": 18.267301010522907,
+          "delta_psnr": -0.93549554957767,
+          "rank8_ssim": 0.5686356935674314,
+          "rank16_ssim": 0.5422551840502653,
+          "delta_ssim": 0.026380509517166084
+        },
+        {
+          "id": "lowlight_val_0006",
+          "task": "lowlight",
+          "rank8_psnr": 14.958083793254573,
+          "rank16_psnr": 16.3346689304803,
+          "delta_psnr": -1.376585137225728,
+          "rank8_ssim": 0.6435015657621409,
+          "rank16_ssim": 0.6736313397097978,
+          "delta_ssim": -0.030129773947656924
+        },
+        {
+          "id": "lowlight_val_0064",
+          "task": "lowlight",
+          "rank8_psnr": 16.09268390134774,
+          "rank16_psnr": 18.149090094187944,
+          "delta_psnr": -2.0564061928402033,
+          "rank8_ssim": 0.4406863681276212,
+          "rank16_ssim": 0.5635428998013096,
+          "delta_ssim": -0.12285653167368837
+        }
+      ]
+    },
+    {
+      "epoch": 6,
+      "step": 3840,
+      "rank8": {
+        "dataset_label": "rank8_epoch06",
+        "manifest": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/clean_val.jsonl",
+        "count": 6,
+        "lora": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/weights/rank8_alpha16.safetensors",
+        "steps": 25,
+        "seed": 3407,
+        "overall": {
+          "psnr": 14.905920452713868,
+          "ssim": 0.42997370196277473
+        },
+        "by_task": {
+          "deblur": {
+            "count": 3,
+            "psnr": 14.258324310830078,
+            "ssim": 0.357019596491113
+          },
+          "lowlight": {
+            "count": 3,
+            "psnr": 15.553516594597658,
+            "ssim": 0.5029278074344364
+          }
+        }
+      },
+      "rank16": {
+        "dataset_label": "rank16_epoch06",
+        "manifest": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/clean_val.jsonl",
+        "count": 6,
+        "lora": "/mnt/Disk1/kl/qwen_diffusion_enhance/outputs/lora/qwen_image_enhance_lora.safetensors",
+        "steps": 25,
+        "seed": 3407,
+        "overall": {
+          "psnr": 15.096660677779694,
+          "ssim": 0.4425191580963802
+        },
+        "by_task": {
+          "deblur": {
+            "count": 3,
+            "psnr": 14.257533768514408,
+            "ssim": 0.35663951449122966
+          },
+          "lowlight": {
+            "count": 3,
+            "psnr": 15.935787587044981,
+            "ssim": 0.5283988017015309
+          }
+        }
+      },
+      "deltas_rank8_minus_rank16": {
+        "deblur": {
+          "psnr": 0.0007905423156699953,
+          "ssim": 0.00038008199988331937
+        },
+        "lowlight": {
+          "psnr": -0.38227099244732266,
+          "ssim": -0.025470994267094427
+        },
+        "macro": {
+          "psnr": -0.19074022506582633,
+          "ssim": -0.012545456133605554
+        }
+      },
+      "per_image": [
+        {
+          "id": "deblur_val_0046",
+          "task": "deblur",
+          "rank8_psnr": 13.375133031990034,
+          "rank16_psnr": 13.378154568056317,
+          "delta_psnr": -0.0030215360662833035,
+          "rank8_ssim": 0.29840942800662207,
+          "rank16_ssim": 0.29858307289616287,
+          "delta_ssim": -0.0001736448895408027
+        },
+        {
+          "id": "deblur_val_0007",
+          "task": "deblur",
+          "rank8_psnr": 12.478826262401446,
+          "rank16_psnr": 12.485835617786048,
+          "delta_psnr": -0.00700935538460179,
+          "rank8_ssim": 0.20981238353928577,
+          "rank16_ssim": 0.20832145554072104,
+          "delta_ssim": 0.001490927998564734
+        },
+        {
+          "id": "deblur_val_0030",
+          "task": "deblur",
+          "rank8_psnr": 16.921013638098756,
+          "rank16_psnr": 16.908611119700858,
+          "delta_psnr": 0.012402518397898632,
+          "rank8_ssim": 0.562836977927431,
+          "rank16_ssim": 0.563014015036805,
+          "delta_ssim": -0.00017703710937400086
+        },
+        {
+          "id": "lowlight_val_0073",
+          "task": "lowlight",
+          "rank8_psnr": 16.96078696030288,
+          "rank16_psnr": 16.627500937244864,
+          "delta_psnr": 0.33328602305801525,
+          "rank8_ssim": 0.5242713323716086,
+          "rank16_ssim": 0.5072410366606571,
+          "delta_ssim": 0.017030295710951493
+        },
+        {
+          "id": "lowlight_val_0006",
+          "task": "lowlight",
+          "rank8_psnr": 16.721538350036063,
+          "rank16_psnr": 16.534068961193384,
+          "delta_psnr": 0.18746938884267905,
+          "rank8_ssim": 0.6897665977710603,
+          "rank16_ssim": 0.6751742318062149,
+          "delta_ssim": 0.014592365964845366
+        },
+        {
+          "id": "lowlight_val_0064",
+          "task": "lowlight",
+          "rank8_psnr": 12.97822447345403,
+          "rank16_psnr": 14.645792862696695,
+          "delta_psnr": -1.667568389242664,
+          "rank8_ssim": 0.2947454921606405,
+          "rank16_ssim": 0.40278113663772036,
+          "delta_ssim": -0.10803564447707986
+        }
+      ]
+    }
+  ],
+  "input_metrics": [
+    {
+      "id": "deblur_val_0046",
+      "task": "deblur",
+      "psnr": 24.719441386053166,
+      "ssim": 0.7871942889920581
+    },
+    {
+      "id": "deblur_val_0007",
+      "task": "deblur",
+      "psnr": 20.865413189028963,
+      "ssim": 0.6273086537124336
+    },
+    {
+      "id": "deblur_val_0030",
+      "task": "deblur",
+      "psnr": 31.897517299329415,
+      "ssim": 0.9187393914573861
+    },
+    {
+      "id": "lowlight_val_0073",
+      "task": "lowlight",
+      "psnr": 7.7737113422752575,
+      "ssim": 0.17060560588446824
+    },
+    {
+      "id": "lowlight_val_0006",
+      "task": "lowlight",
+      "psnr": 6.126223383511906,
+      "ssim": 0.09607753741049445
+    },
+    {
+      "id": "lowlight_val_0064",
+      "task": "lowlight",
+      "psnr": 14.458660249017335,
+      "ssim": 0.35542683276384707
+    }
+  ],
+  "epoch_boundary_training_avr_loss": {
+    "rank8": {
+      "1": 0.036,
+      "2": 0.0299,
+      "3": 0.0303,
+      "4": 0.0332,
+      "5": 0.0314,
+      "6": 0.0293
+    },
+    "rank16": {
+      "1": 0.0352,
+      "2": 0.0295,
+      "3": 0.0291,
+      "4": 0.0314,
+      "5": 0.0304,
+      "6": 0.0291
+    }
+  },
+  "limitations": [
+    "one training seed",
+    "six validation examples, not a final test benchmark",
+    "lowlight near-duplicate scenes not certified",
+    "rank-dependent initialization may change RNG consumption"
+  ],
+  "interpretation": "Use the epoch-3 paired comparison as the primary answer. Epoch 6 describes additional-training behavior. Small-sample metric gains alone do not establish general superiority or diagnose overfitting."
+}

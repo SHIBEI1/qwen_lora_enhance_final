@@ -1,0 +1,8 @@
+numpy==2.4.6
+pillow==12.3.0
+scikit-image==0.26.0
+torch==2.7.1+cu128
+transformers==4.54.1
+accelerate==1.6.0
+safetensors==0.4.5
+bitsandbytes==0.50.2

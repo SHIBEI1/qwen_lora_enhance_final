@@ -1,0 +1,42 @@
+{
+  "phase": "complete",
+  "updated_at": "2026-10-07T00:34:23+08:00",
+  "pid": 1691562,
+  "started_at": "2026-10-06T16:50:33+08:00",
+  "selected_ids": [
+    "deblur_val_0046",
+    "deblur_val_0007",
+    "deblur_val_0030",
+    "lowlight_val_0073",
+    "lowlight_val_0006",
+    "lowlight_val_0064"
+  ],
+  "replacements": [
+    {
+      "removed_id": "lowlight_val_0016",
+      "replacement_id": "lowlight_val_0073",
+      "reason": "exclude RGB content overlap; replace by closest input brightness"
+    }
+  ],
+  "child_pid": 1708169,
+  "phase_started_at": "2026-10-06T23:21:09+08:00",
+  "phase_log": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/logs/rank8_epoch06.log",
+  "global_step": 3840,
+  "max_steps": 3840,
+  "training_avr_loss": 0.0293,
+  "training_elapsed_seconds": 17613.4,
+  "paused_at": "2026-10-03T16:50:01+08:00",
+  "pause_reason": "User requested stopping this experiment while developing another project.",
+  "automatic_resume": false,
+  "resume_mode": "restart_fresh_from_original_frozen_configuration",
+  "pause_record": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/reports/pause_record.json",
+  "intentional_stop_details": {
+    "error": "CalledProcessError(1, ['/home/liu/miniforge3/envs/myenv/bin/accelerate', 'launch', '--config_file', '/mnt/Disk1/kl/qwen_diffusion_enhance/configs/accelerate_single_gpu.yaml', '--num_cpu_threads_per_process', '1', '--mixed_precision', 'bf16', '/mnt/Disk1/kl/qwen_diffusion_enhance/third_party/musubi-tuner/src/musubi_tuner/qwen_image_train_network.py', '--dit', '/mnt/Disk1/kl/qwen_diffusion_enhance/models/hf/Qwen-Image-Edit-2511/transformer/diffusion_pytorch_model-00001-of-00005.safetensors', '--vae', '/mnt/Disk1/kl/qwen_diffusion_enhance/models/hf/Qwen-Image-Edit-2511/vae/diffusion_pytorch_model.safetensors', '--text_encoder', '/mnt/Disk1/kl/qwen_diffusion_enhance/models/hf/Qwen-Image-Edit-2511/text_encoder/model-00001-of-00004.safetensors', '--dataset_config', '/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/train.toml', '--model_version', 'edit-2511', '--sdpa', '--mixed_precision', 'bf16', '--timestep_sampling', 'shift', '--weighting_scheme', 'none', '--discrete_flow_shift', '2.2', '--optimizer_type', 'adamw8bit', '--learning_rate', '5e-5', '--gradient_checkpointing', '--blocks_to_swap', '16', '--fp8_base', '--fp8_scaled', '--max_data_loader_n_workers', '2', '--persistent_data_loader_workers', '--gradient_accumulation_steps', '1', '--network_module', 'networks.lora_qwen_image', '--network_dim', '8', '--network_alpha', '16', '--network_dropout', '0.05', '--max_train_epochs', '6', '--save_every_n_epochs', '1', '--seed', '3407', '--output_dir', '/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/weights', '--output_name', 'rank8_alpha16'])",
+    "failed_at": "2026-10-03T16:48:06+08:00"
+  },
+  "training_seconds": 17624.9,
+  "last_label": "rank8_epoch06",
+  "last_evaluation_seconds": 4382.3,
+  "completed_at": "2026-10-07T00:34:23+08:00",
+  "report": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/reports/comparison.json"
+}

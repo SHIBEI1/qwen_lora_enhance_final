@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/home/liu/miniforge3/envs/myenv/bin/python",
+    "/mnt/Disk1/kl/qwen_diffusion_enhance/scripts/evaluate.py",
+    "--project-root",
+    "/mnt/Disk1/kl/qwen_diffusion_enhance",
+    "--lora",
+    "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/weights/rank8_alpha16.safetensors",
+    "--manifest",
+    "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/clean_val.jsonl",
+    "--label",
+    "rank8_epoch06",
+    "--output-dir",
+    "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/results/rank8_epoch06",
+    "--steps",
+    "25",
+    "--seed",
+    "3407",
+    "--skip-existing",
+    "--log-name",
+    "rank8_epoch06",
+    "--log-dir",
+    "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/logs"
+  ],
+  "cwd": "/mnt/Disk1/kl/qwen_diffusion_enhance"
+}

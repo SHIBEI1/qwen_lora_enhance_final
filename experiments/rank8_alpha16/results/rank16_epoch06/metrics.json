@@ -1,0 +1,24 @@
+{
+  "dataset_label": "rank16_epoch06",
+  "manifest": "/mnt/Disk1/kl/qwen_diffusion_enhance/experiments/rank8_alpha16/configs/clean_val.jsonl",
+  "count": 6,
+  "lora": "/mnt/Disk1/kl/qwen_diffusion_enhance/outputs/lora/qwen_image_enhance_lora.safetensors",
+  "steps": 25,
+  "seed": 3407,
+  "overall": {
+    "psnr": 15.096660677779694,
+    "ssim": 0.4425191580963802
+  },
+  "by_task": {
+    "deblur": {
+      "count": 3,
+      "psnr": 14.257533768514408,
+      "ssim": 0.35663951449122966
+    },
+    "lowlight": {
+      "count": 3,
+      "psnr": 15.935787587044981,
+      "ssim": 0.5283988017015309
+    }
+  }
+}
